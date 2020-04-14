@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://UserUnknownX.github.io</id>
     <title>UserUnknown</title>
-    <updated>2020-04-14T13:13:19.659Z</updated>
+    <updated>2020-04-14T13:17:32.366Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://UserUnknownX.github.io"/>
     <link rel="self" href="https://UserUnknownX.github.io/atom.xml"/>
@@ -10,4 +10,206 @@
     <logo>https://UserUnknownX.github.io/images/avatar.png</logo>
     <icon>https://UserUnknownX.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UserUnknown</rights>
+    <entry>
+        <title type="html"><![CDATA[Windows.h库]]></title>
+        <id>https://UserUnknownX.github.io/post/windowsh-ku/</id>
+        <link href="https://UserUnknownX.github.io/post/windowsh-ku/">
+        </link>
+        <updated>2020-04-14T13:14:52.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="声明">声明</h1>
+<h2 id="关于内容">关于内容</h2>
+<p>此处不会告诉你 <code>shutdown -i//以及远程蓝屏等</code> 这种不道德的东西( <s>诶我说出来了</s> )</p>
+<h2 id="关于系统">关于系统</h2>
+<p>请使用Windows系统(好像是废话</p>
+<h1 id="system-函数">system 函数</h1>
+<p>这个函数差不多就是调用 cmd (命令提示符)。</p>
+<h2 id="调用">调用</h2>
+<pre><code class="language-cpp">system(&quot;命令语句&quot;);
+</code></pre>
+<p>当然，不一定要在程序中调用，用 txt 打入文本( 不用加system() )后改后缀名为 cmd 后运行即可。</p>
+<p>Win 键 + R 唤出 cmd 后输入 help 即可查看。</p>
+<h2 id="常用的命令语句">常用的命令语句</h2>
+<pre><code class="language-cpp">system(&quot;shutdown&quot;);//关机，不多解释
+system(&quot;color n&quot;);//颜色,后面介绍
+system(&quot;title program_name&quot;);//改变标题名字
+system(&quot;cls&quot;);//清屏
+//还有comp等函数，当然，comp在对拍是是有大用的
+</code></pre>
+<h2 id="color函数">color函数</h2>
+<table>
+<thead>
+<tr>
+<th>n的值</th>
+<th>对应颜色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n=0</td>
+<td>黑色</td>
+</tr>
+<tr>
+<td>n=1</td>
+<td>蓝色</td>
+</tr>
+<tr>
+<td>n=2</td>
+<td>绿色</td>
+</tr>
+<tr>
+<td>n=3</td>
+<td>浅绿色</td>
+</tr>
+<tr>
+<td>n=4</td>
+<td>红色</td>
+</tr>
+<tr>
+<td>n=5</td>
+<td>紫色</td>
+</tr>
+<tr>
+<td>n=6</td>
+<td>黄色</td>
+</tr>
+<tr>
+<td>n=7</td>
+<td>白色</td>
+</tr>
+<tr>
+<td>n=8</td>
+<td>灰色</td>
+</tr>
+<tr>
+<td>n=9</td>
+<td>淡蓝色</td>
+</tr>
+<tr>
+<td>n=A</td>
+<td>淡绿色</td>
+</tr>
+<tr>
+<td>n=B</td>
+<td>淡浅绿色</td>
+</tr>
+<tr>
+<td>n=C</td>
+<td>淡红色</td>
+</tr>
+<tr>
+<td>n=D</td>
+<td>淡紫色</td>
+</tr>
+<tr>
+<td>n=E</td>
+<td>淡黄色</td>
+</tr>
+<tr>
+<td>n=F</td>
+<td>亮白色</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="messagebox-函数对话框">MessageBox 函数(对话框)</h1>
+<p>共有四种：普通对话框，错误对话框，问号对话框以及警告对话框。</p>
+<h2 id="调用-2">调用</h2>
+<pre><code class="language-cpp">MessageBox(NULL,&quot;U AK IOI tql%%%&quot;,&quot;windows.h&quot;,NUM);
+</code></pre>
+<p>其中，NUM 的部分是一个参数，填入1，16，32，48 分别对应 普通对话框，错误对话框，问号对话框，警告对话框。</p>
+<p>众所周知&quot;U AK IOI tql%%%&quot;的部分是可以更改的。</p>
+<hr>
+<h1 id="beep-函数">Beep 函数</h1>
+<p>这个函数是一个能让你的电脑发出声音的函数</p>
+<h2 id="warning">WARNING :</h2>
+<p>有可能使一些年代久远的电脑报废，慎用！本人概不负责。</p>
+<p>所以在此不放代码，确认使用后请 BaiduFirstSearch 。</p>
+<hr>
+<h1 id="sleep-函数">Sleep 函数</h1>
+<p>使你的程序暂停一段时间后继续运行。</p>
+<h2 id="调用-3">调用</h2>
+<pre><code class="language-cpp">Sleep(n);//注意，S要大写！
+</code></pre>
+<p>n 是一个整数，代表要停止的时间单位为 ms 。</p>
+<hr>
+<h1 id="关于鼠标的函数">关于鼠标的函数</h1>
+<h2 id="让鼠标乱动">让鼠标乱动</h2>
+<pre><code class="language-cpp">#include&lt;windows.h&gt;//让鼠标乱动
+#include&lt;ctime&gt;//Alt+F4停止,当然也可以关机
+using namespace std;
+int main(){
+    int x=GetSystemMetrics(SM_CXSCREEN),y=GetSystemMetrics(SM_CYSCREEN);
+    srand(time(0));
+    while(1) SetCursorPos(rand()%x,rand()%y);
+}
+</code></pre>
+<h2 id="连点器">连点器</h2>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;//鼠标连点器
+#include&lt;windows.h&gt;
+using namespace std;
+
+bool flag=0,fir=1;
+int stop;
+
+void work(int stop)
+{
+  while(1)
+  {
+    fir=0;
+    if(GetAsyncKeyState(VK_RBUTTON))
+    {
+      system(&quot;cls&quot;);
+      fir=1;
+      return;
+    }
+    if(GetAsyncKeyState(VK_SPACE))
+    {
+      while(1)
+      {
+        system(&quot;cls&quot;);
+        cout&lt;&lt;&quot;运行中&quot;&lt;&lt;endl&lt;&lt;&quot;按ESC以结束&quot;;
+        flag=0;
+        if(GetAsyncKeyState(VK_ESCAPE))
+        {
+          flag=1;
+        }
+        mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
+        Sleep(stop);
+        if(flag==1)
+        {
+          system(&quot;cls&quot;);
+          cout&lt;&lt;&quot;暂停&quot;&lt;&lt;endl&lt;&lt;&quot;按空格以开始&quot;&lt;&lt;endl&lt;&lt;&quot;鼠标右键以重新设定&quot;;
+          break;
+        }
+      }
+    }
+  }
+}
+
+void first()
+{
+  fir=0;
+  system(&quot;mode con cols=20 lines=20&quot;);
+  printf(&quot;鼠标连点器:Made By UserUnknown\n用法:\n空格:开始,暂停\n鼠标右键:重新开始\n&quot;);
+  Sleep(500);
+  system(&quot;cls&quot;);
+  work(20);
+  if(fir) return;
+}
+
+int main()
+{
+  system(&quot;mode con cols=20 lines=10&quot;);
+  while(fir) first();
+}
+</code></pre>
+<hr>
+<p>持续更新中...</p>
+<p><s>不排除咕咕咕的可能</s></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>如果您发现有误，请评论告诉我，谢谢！</mtext></mrow><annotation encoding="application/x-tex">\text{如果您发现有误，请评论告诉我，谢谢！}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">如果您发现有误，请评论告诉我，谢谢！</span></span></span></span></span></span></p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mtext>To Be Continued</mtext></mstyle></mstyle></menclose></mstyle></mrow><annotation encoding="application/x-tex">\Large\boxed{\text{To Be Continued}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9791935999999997em;vertical-align:-0.4896000000000001em;"></span><span class="mord sizing reset-size6 size8"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0344399999999998em;"><span style="top:-3.44em;"><span class="pstrut" style="height:3.44em;"></span><span class="mord boxpad"><span class="mord"><span class="mord text"><span class="mord">To Be Continued</span></span></span></span></span><span style="top:-3.0999999999999996em;"><span class="pstrut" style="height:3.44em;"></span><span class="stretchy fbox" style="height:1.3744399999999999em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3400000000000001em;"><span></span></span></span></span></span></span></span></span></span></p>
+]]></content>
+    </entry>
 </feed>
