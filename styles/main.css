@@ -2112,7 +2112,7 @@ blockquote {
     .mist .site-title i {
       background: #FFFFFFcc;
     }.box-scale > #landlord {
-      transform: scale([0,0.1]);
+      transform: scale([0,0.5]);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }
