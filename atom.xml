@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://UserUnknownX.github.io</id>
     <title>UserUnknown</title>
-    <updated>2020-04-15T00:07:09.063Z</updated>
+    <updated>2020-04-15T00:12:15.440Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://UserUnknownX.github.io"/>
     <link rel="self" href="https://UserUnknownX.github.io/atom.xml"/>
@@ -10,6 +10,120 @@
     <logo>https://UserUnknownX.github.io/images/avatar.png</logo>
     <icon>https://UserUnknownX.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, UserUnknown</rights>
+    <entry>
+        <title type="html"><![CDATA[题解 CF160B 【Unlucky Ticket】]]></title>
+        <id>https://UserUnknownX.github.io/post/ti-jie-cf160b-unlucky-ticket/</id>
+        <link href="https://UserUnknownX.github.io/post/ti-jie-cf160b-unlucky-ticket/">
+        </link>
+        <updated>2020-04-15T00:11:48.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>思路</li>
+</ol>
+<p>这道题应该怎么做？</p>
+<p>可以把输入的数字逐位拆分后存入数组，就像这样存进去：</p>
+<pre><code class="language-cpp">int a[N],b[N]
+tmp=n;
+k=1;
+while(--tmp){
+	a[k]=s%10
+	s/=10;
+	k++;
+}
+tmp=n;
+k=1;
+while(--tmp){
+	b[k]=s%10
+	s/=10;
+	k++;
+}
+</code></pre>
+<p>当然也可以用字符串进行存储，把字符转数字即可：</p>
+<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++) a[i]=s[i-1]-48;
+for(int i=n+1;i&lt;=2*n;i++) b[i-n]=s[i-1]-48;//48=='0',应该都明白这样转换
+</code></pre>
+<ol start="2">
+<li>为什么需要排序(上面没有打出来)</li>
+</ol>
+<p>因为要较小的数对应较小的，较大的对应较大的，有点类似于贪心的思想。</p>
+<ol start="3">
+<li>判断</li>
+</ol>
+<p>有对应位置上的数相等的：直接输出 <code>NO</code> 。</p>
+<p>如果有两个位置与其对应的数(不能是同一个位置)大小关系不相同， 输出 <code>NO</code> 。</p>
+<p>否则就输出 <code>YES</code> 。</p>
+<p>The End.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[题解 AT3849 【[ABC084C] Special Trains】]]></title>
+        <id>https://UserUnknownX.github.io/post/ti-jie-at3849-abc084c-special-trains/</id>
+        <link href="https://UserUnknownX.github.io/post/ti-jie-at3849-abc084c-special-trains/">
+        </link>
+        <updated>2020-04-15T00:11:13.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="题目大意">题目大意</h1>
+<p>总共有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个车站，每两个相邻的车站有单向的车.</p>
+<p>从第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 个站到第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个站 需要时间 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 分钟，且第一趟车在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">S_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>分钟时发（之后每隔 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 分钟发一辆车）。</p>
+<p>并且 数据保证 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 能被 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 整除。</p>
+<p>要你求出每以个点到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的最少时间。</p>
+<h1 id="思路">思路</h1>
+<p>因为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>500</mn></mrow><annotation encoding="application/x-tex">500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，所以不用多考虑，可以直接暴力模拟。</p>
+<p>只要枚举出每一个点到<strong>其他</strong>各个点所需要<strong>最少</strong>的的时间即可。</p>
+<p>但是虽然是需要求出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的时间，但是事实上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的时间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，无需考虑。</p>
+<p>最后输出最少所需的时间(即算出数的和)即可。</p>
+<h1 id="核心代码">核心代码</h1>
+<pre><code class="language-cpp">ans=max(ans,s[j]);
+if(ans%f[j]!=0) ans=ans+f[j]-ans%f[j];/*此处指处于间隔的时间之内(即未发车)*/
+ans+=c[j];/*加上所需时间*/
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[UVA352 The Seasonal War]]></title>
+        <id>https://UserUnknownX.github.io/post/uva352-the-seasonal-war/</id>
+        <link href="https://UserUnknownX.github.io/post/uva352-the-seasonal-war/">
+        </link>
+        <updated>2020-04-15T00:09:27.000Z</updated>
+        <content type="html"><![CDATA[<p>题目本身不难理解，就是搜索。</p>
+<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+
+string mp[110];
+int n,m,ans=0;
+
+bool check(int x,int y){
+    if(x&lt;n&amp;&amp;y&lt;n&amp;&amp;x&gt;-1&amp;&amp;y&gt;-1) return 1;
+    return 0;
+}//判断是否越界
+
+void dfs(int x,int y){
+    
+    if(!check(x,y)) return;//超出边界
+    if(mp[x][y]=='0') return;//不为1，不可能构成一个块,已经访问
+    mp[x][y]='0';//标记为已经访问过了
+    for(int i=-1;i&lt;=1;i++) for(int j=-1;j&lt;=1;j++) if(check(x+i,y+j)&amp;&amp;mp[x+i][y+j]!='0') dfs(x+i,y+j);//枚举方向并且进行下一步
+}
+
+int main(){
+    int tmp=0;
+    while(~scanf(&quot;%d&quot;,&amp;n)){
+        ans=0;//记得清零
+        tmp++;
+        for(int i=0;i&lt;n;i++) cin&gt;&gt;mp[i];
+        for(int i=0;i&lt;n;i++){
+           for(int j=0;j&lt;n;j++){
+             if(mp[i][j]=='1'){
+                   ans++;//块的数量
+                    dfs(i,j);//逐一枚举所有唯一的块
+                } 
+            }
+        }       
+        cout&lt;&lt;&quot;Image number &quot;&lt;&lt;tmp&lt;&lt;&quot; contains &quot;&lt;&lt;ans&lt;&lt;&quot; war eagles.&quot;&lt;&lt;endl;
+    }
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Windows.h库]]></title>
         <id>https://UserUnknownX.github.io/post/windowsh-ku/</id>
