@@ -2049,11 +2049,11 @@ blockquote {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9cc;
+      background: #e9ecefcc;
     }
 
     .nav-item:hover {
-      background: #f9f9f9cc;
+      background: #e9ecefcc;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2068,28 +2068,28 @@ blockquote {
       color: #eee;
       border-bottom-color: #eee;
     }.markdownIt-TOC a:hover {
-      color: #fff;
-      border-bottom-color: #fff;
+      color: #868e96;
+      border-bottom-color: #868e96;
     }.active-current > a {
-      color: #f1f3f5 !important;
-      border-bottom-color: #f1f3f5 !important;
+      color: #868e96 !important;
+      border-bottom-color: #868e96 !important;
     }
     .sidebar-title-active {
-      color: #f1f3f5;
-      border-bottom-color: #f1f3f5;
+      color: #868e96;
+      border-bottom-color: #868e96;
     }
     .sidebar-title-item:hover {
-      color: #f1f3f5 !important;
+      color: #868e96 !important;
     }
     .active-show > a {
-      color: #f1f3f5;
-      border-bottom-color: #f1f3f5;
+      color: #868e96;
+      border-bottom-color: #868e96;
     }
     .active-hidden > a {
-      color: #f1f3f5;
-      border-bottom-color: #f1f3f5;
+      color: #868e96;
+      border-bottom-color: #868e96;
     }.bg-color {
-      background-color: #ffffffcc;
+      background-color: #f1f3f5cc;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
       border-radius: 20px;
@@ -2107,10 +2107,10 @@ blockquote {
       background: #000000cc;
     }
     .main-title {
-      color: #FFF;
+      color: #f1f3f5;
     }
     .mist .site-title i {
-      background: #FFFFFFcc;
+      background: #f1f3f5cc;
     }.box-scale > #landlord {
       transform: scale([0.1,0.5]);
     }.box-shadow-wrapper {
