@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://UserUnknownX.github.io</id>
     <title>UserUnknown</title>
-    <updated>2020-04-22T11:17:01.879Z</updated>
+    <updated>2020-04-22T11:26:50.437Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://UserUnknownX.github.io"/>
     <link rel="self" href="https://UserUnknownX.github.io/atom.xml"/>
@@ -16,43 +16,6 @@
         <link href="https://UserUnknownX.github.io/post/ti-jie-cf160b-unlucky-ticket/">
         </link>
         <updated>2020-04-15T00:11:48.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>思路</li>
-</ol>
-<p>这道题应该怎么做？</p>
-<p>可以把输入的数字逐位拆分后存入数组，就像这样存进去：</p>
-<pre><code class="language-cpp">int a[N],b[N]
-tmp=n;
-k=1;
-while(--tmp){
-	a[k]=s%10
-	s/=10;
-	k++;
-}
-tmp=n;
-k=1;
-while(--tmp){
-	b[k]=s%10
-	s/=10;
-	k++;
-}
-</code></pre>
-<p>当然也可以用字符串进行存储，把字符转数字即可：</p>
-<pre><code class="language-cpp">for(int i=1;i&lt;=n;i++) a[i]=s[i-1]-48;
-for(int i=n+1;i&lt;=2*n;i++) b[i-n]=s[i-1]-48;//48=='0',应该都明白这样转换
-</code></pre>
-<ol start="2">
-<li>为什么需要排序(上面没有打出来)</li>
-</ol>
-<p>因为要较小的数对应较小的，较大的对应较大的，有点类似于贪心的思想。</p>
-<ol start="3">
-<li>判断</li>
-</ol>
-<p>有对应位置上的数相等的：直接输出 <code>NO</code> 。</p>
-<p>如果有两个位置与其对应的数(不能是同一个位置)大小关系不相同， 输出 <code>NO</code> 。</p>
-<p>否则就输出 <code>YES</code> 。</p>
-<p>The End.</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 AT3849 【[ABC084C] Special Trains】]]></title>
@@ -60,22 +23,6 @@ for(int i=n+1;i&lt;=2*n;i++) b[i-n]=s[i-1]-48;//48=='0',应该都明白这样转
         <link href="https://UserUnknownX.github.io/post/ti-jie-at3849-abc084c-special-trains/">
         </link>
         <updated>2020-04-15T00:11:13.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="题目大意">题目大意</h1>
-<p>总共有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 个车站，每两个相邻的车站有单向的车.</p>
-<p>从第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 个站到第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个站 需要时间 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">C_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 分钟，且第一趟车在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">S_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>分钟时发（之后每隔 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 分钟发一辆车）。</p>
-<p>并且 数据保证 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 能被 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 整除。</p>
-<p>要你求出每以个点到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的最少时间。</p>
-<h1 id="思路">思路</h1>
-<p>因为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>500</mn></mrow><annotation encoding="application/x-tex">500</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">0</span></span></span></span>，所以不用多考虑，可以直接暴力模拟。</p>
-<p>只要枚举出每一个点到<strong>其他</strong>各个点所需要<strong>最少</strong>的的时间即可。</p>
-<p>但是虽然是需要求出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的时间，但是事实上 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span></span></span></span> 的时间为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，无需考虑。</p>
-<p>最后输出最少所需的时间(即算出数的和)即可。</p>
-<h1 id="核心代码">核心代码</h1>
-<pre><code class="language-cpp">ans=max(ans,s[j]);
-if(ans%f[j]!=0) ans=ans+f[j]-ans%f[j];/*此处指处于间隔的时间之内(即未发车)*/
-ans+=c[j];/*加上所需时间*/
-</code></pre>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA352 The Seasonal War]]></title>
@@ -83,46 +30,6 @@ ans+=c[j];/*加上所需时间*/
         <link href="https://UserUnknownX.github.io/post/uva352-the-seasonal-war/">
         </link>
         <updated>2020-04-15T00:09:27.000Z</updated>
-        <content type="html"><![CDATA[<p>题目本身不难理解，就是搜索。</p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-
-string mp[110];
-int n,m,ans=0;
-
-bool check(int x,int y){
-    if(x&lt;n&amp;&amp;y&lt;n&amp;&amp;x&gt;-1&amp;&amp;y&gt;-1) return 1;
-    return 0;
-}//判断是否越界
-
-void dfs(int x,int y){
-    
-    if(!check(x,y)) return;//超出边界
-    if(mp[x][y]=='0') return;//不为1，不可能构成一个块,已经访问
-    mp[x][y]='0';//标记为已经访问过了
-    for(int i=-1;i&lt;=1;i++) for(int j=-1;j&lt;=1;j++) if(check(x+i,y+j)&amp;&amp;mp[x+i][y+j]!='0') dfs(x+i,y+j);//枚举方向并且进行下一步
-}
-
-int main(){
-    int tmp=0;
-    while(~scanf(&quot;%d&quot;,&amp;n)){
-        ans=0;//记得清零
-        tmp++;
-        for(int i=0;i&lt;n;i++) cin&gt;&gt;mp[i];
-        for(int i=0;i&lt;n;i++){
-           for(int j=0;j&lt;n;j++){
-             if(mp[i][j]=='1'){
-                   ans++;//块的数量
-                    dfs(i,j);//逐一枚举所有唯一的块
-                } 
-            }
-        }       
-        cout&lt;&lt;&quot;Image number &quot;&lt;&lt;tmp&lt;&lt;&quot; contains &quot;&lt;&lt;ans&lt;&lt;&quot; war eagles.&quot;&lt;&lt;endl;
-    }
-    return 0;
-}
-</code></pre>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows.h库]]></title>
@@ -130,201 +37,6 @@ int main(){
         <link href="https://UserUnknownX.github.io/post/windowsh-ku/">
         </link>
         <updated>2020-04-14T13:14:52.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="声明">声明</h1>
-<h2 id="关于内容">关于内容</h2>
-<p>此处不会告诉你 <code>shutdown -i//以及远程蓝屏等</code> 这种不道德的东西( <s>诶我说出来了</s> )</p>
-<h2 id="关于系统">关于系统</h2>
-<p>请使用Windows系统(好像是废话</p>
-<h1 id="system-函数">system 函数</h1>
-<p>这个函数差不多就是调用 cmd (命令提示符)。</p>
-<h2 id="调用">调用</h2>
-<pre><code class="language-cpp">system(&quot;命令语句&quot;);
-</code></pre>
-<p>当然，不一定要在程序中调用，用 txt 打入文本( 不用加system() )后改后缀名为 cmd 后运行即可。</p>
-<p>Win 键 + R 唤出 cmd 后输入 help 即可查看。</p>
-<h2 id="常用的命令语句">常用的命令语句</h2>
-<pre><code class="language-cpp">system(&quot;shutdown&quot;);//关机，不多解释
-system(&quot;color n&quot;);//颜色,后面介绍
-system(&quot;title program_name&quot;);//改变标题名字
-system(&quot;cls&quot;);//清屏
-//还有comp等函数，当然，comp在对拍是是有大用的
-</code></pre>
-<h2 id="color函数">color函数</h2>
-<table>
-<thead>
-<tr>
-<th>n的值</th>
-<th>对应颜色</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>n=0</td>
-<td>黑色</td>
-</tr>
-<tr>
-<td>n=1</td>
-<td>蓝色</td>
-</tr>
-<tr>
-<td>n=2</td>
-<td>绿色</td>
-</tr>
-<tr>
-<td>n=3</td>
-<td>浅绿色</td>
-</tr>
-<tr>
-<td>n=4</td>
-<td>红色</td>
-</tr>
-<tr>
-<td>n=5</td>
-<td>紫色</td>
-</tr>
-<tr>
-<td>n=6</td>
-<td>黄色</td>
-</tr>
-<tr>
-<td>n=7</td>
-<td>白色</td>
-</tr>
-<tr>
-<td>n=8</td>
-<td>灰色</td>
-</tr>
-<tr>
-<td>n=9</td>
-<td>淡蓝色</td>
-</tr>
-<tr>
-<td>n=A</td>
-<td>淡绿色</td>
-</tr>
-<tr>
-<td>n=B</td>
-<td>淡浅绿色</td>
-</tr>
-<tr>
-<td>n=C</td>
-<td>淡红色</td>
-</tr>
-<tr>
-<td>n=D</td>
-<td>淡紫色</td>
-</tr>
-<tr>
-<td>n=E</td>
-<td>淡黄色</td>
-</tr>
-<tr>
-<td>n=F</td>
-<td>亮白色</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h1 id="messagebox-函数对话框">MessageBox 函数(对话框)</h1>
-<p>共有四种：普通对话框，错误对话框，问号对话框以及警告对话框。</p>
-<h2 id="调用-2">调用</h2>
-<pre><code class="language-cpp">MessageBox(NULL,&quot;U AK IOI tql%%%&quot;,&quot;windows.h&quot;,NUM);
-</code></pre>
-<p>其中，NUM 的部分是一个参数，填入1，16，32，48 分别对应 普通对话框，错误对话框，问号对话框，警告对话框。</p>
-<p>众所周知&quot;U AK IOI tql%%%&quot;的部分是可以更改的。</p>
-<hr>
-<h1 id="beep-函数">Beep 函数</h1>
-<p>这个函数是一个能让你的电脑发出声音的函数</p>
-<h2 id="warning">WARNING :</h2>
-<p>有可能使一些年代久远的电脑报废，慎用！本人概不负责。</p>
-<p>所以在此不放代码，确认使用后请 BaiduFirstSearch 。</p>
-<hr>
-<h1 id="sleep-函数">Sleep 函数</h1>
-<p>使你的程序暂停一段时间后继续运行。</p>
-<h2 id="调用-3">调用</h2>
-<pre><code class="language-cpp">Sleep(n);//注意，S要大写！
-</code></pre>
-<p>n 是一个整数，代表要停止的时间单位为 ms 。</p>
-<hr>
-<h1 id="关于鼠标的函数">关于鼠标的函数</h1>
-<h2 id="让鼠标乱动">让鼠标乱动</h2>
-<pre><code class="language-cpp">#include&lt;windows.h&gt;//让鼠标乱动
-#include&lt;ctime&gt;//Alt+F4停止,当然也可以关机
-using namespace std;
-int main(){
-    int x=GetSystemMetrics(SM_CXSCREEN),y=GetSystemMetrics(SM_CYSCREEN);
-    srand(time(0));
-    while(1) SetCursorPos(rand()%x,rand()%y);
-}
-</code></pre>
-<h2 id="连点器">连点器</h2>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;//鼠标连点器
-#include&lt;windows.h&gt;
-using namespace std;
-
-bool flag=0,fir=1;
-int stop;
-
-void work(int stop)
-{
-  while(1)
-  {
-    fir=0;
-    if(GetAsyncKeyState(VK_RBUTTON))
-    {
-      system(&quot;cls&quot;);
-      fir=1;
-      return;
-    }
-    if(GetAsyncKeyState(VK_SPACE))
-    {
-      while(1)
-      {
-        system(&quot;cls&quot;);
-        cout&lt;&lt;&quot;运行中&quot;&lt;&lt;endl&lt;&lt;&quot;按ESC以结束&quot;;
-        flag=0;
-        if(GetAsyncKeyState(VK_ESCAPE))
-        {
-          flag=1;
-        }
-        mouse_event(MOUSEEVENTF_LEFTDOWN|MOUSEEVENTF_LEFTUP,0,0,0,0);
-        Sleep(stop);
-        if(flag==1)
-        {
-          system(&quot;cls&quot;);
-          cout&lt;&lt;&quot;暂停&quot;&lt;&lt;endl&lt;&lt;&quot;按空格以开始&quot;&lt;&lt;endl&lt;&lt;&quot;鼠标右键以重新设定&quot;;
-          break;
-        }
-      }
-    }
-  }
-}
-
-void first()
-{
-  fir=0;
-  system(&quot;mode con cols=20 lines=20&quot;);
-  printf(&quot;鼠标连点器:Made By UserUnknown\n用法:\n空格:开始,暂停\n鼠标右键:重新开始\n&quot;);
-  Sleep(500);
-  system(&quot;cls&quot;);
-  work(20);
-  if(fir) return;
-}
-
-int main()
-{
-  system(&quot;mode con cols=20 lines=10&quot;);
-  while(fir) first();
-}
-</code></pre>
-<hr>
-<p>持续更新中...</p>
-<p><s>不排除咕咕咕的可能</s></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>如果您发现有误，请评论告诉我，谢谢！</mtext></mrow><annotation encoding="application/x-tex">\text{如果您发现有误，请评论告诉我，谢谢！}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">如果您发现有误，请评论告诉我，谢谢！</span></span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mtext>To Be Continued</mtext></mstyle></mstyle></menclose></mstyle></mrow><annotation encoding="application/x-tex">\Large\boxed{\text{To Be Continued}}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9791935999999997em;vertical-align:-0.4896000000000001em;"></span><span class="mord sizing reset-size6 size8"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0344399999999998em;"><span style="top:-3.44em;"><span class="pstrut" style="height:3.44em;"></span><span class="mord boxpad"><span class="mord"><span class="mord text"><span class="mord">To Be Continued</span></span></span></span></span><span style="top:-3.0999999999999996em;"><span class="pstrut" style="height:3.44em;"></span><span class="stretchy fbox" style="height:1.3744399999999999em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3400000000000001em;"><span></span></span></span></span></span></span></span></span></span></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[提示]]></title>
@@ -332,81 +44,5 @@ int main()
         <link href="https://UserUnknownX.github.io/post/hints/">
         </link>
         <updated>2020-03-31T16:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="普通篇">普通篇</h1>
-<h1 id="level-0">Level 0</h1>
-<p>看看网址，很显然了吧？</p>
-<h1 id="level-1">Level 1</h1>
-<p>这是什么编码？解码一下？</p>
-<h1 id="level-2">Level 2</h1>
-<p>为什么上面空了这么多啊？</p>
-<h1 id="level-3">Level 3</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup></mrow><annotation encoding="application/x-tex">e^{i\pi}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.824664em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.824664em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span></span></span></span></span></span></span></span></span> 不是等于-1吗？为什么输进去不对呢？<br>
-有什么东西看不到吗？<br>
-好像和Level 2 有点像？</p>
-<h1 id="level-4">Level 4</h1>
-<h2 id="a">A</h2>
-<p>这图片为什么打不开啊？<br>
-或许这里面是文字？</p>
-<h2 id="b">B</h2>
-<p>这东西莫名眼熟，为什么解码了 <strong>一次</strong> 还是乱码呢？</p>
-<h1 id="level-5">Level 5</h1>
-<p>我可以告诉你代码来自C语言国际混乱代码大赛。<br>
-还有，答案和&quot;Have fun&quot;无关。</p>
-<h1 id="level-6">Level 6</h1>
-<p>为什么字都左右颠倒了过来？网页标题也变了？<br>
-题目里的词倒过来是指哪里呢？</p>
-<h1 id="level-7">Level 7</h1>
-<p>Level 6我们怎么做的？</p>
-<h1 id="level-8">Level 8</h1>
-<h2 id="a-2">A</h2>
-<p>这颜色怪怪的啊？</p>
-<h2 id="b-2">B</h2>
-<p>RGB是什么？</p>
-<h1 id="level-9">Level 9</h1>
-<p>这像极了某网站的名字颜色机制。</p>
-<h1 id="level-10">Level 10</h1>
-<p>这里是？你上次怎么离开的来着？</p>
-<h1 id="level-11">Level 11</h1>
-<p>第一项真的属于这个数列吗？<br>
-所以说？</p>
-<h1 id="level-12">Level 12</h1>
-<p>出题人这么良心？我都不信！<br>
-去console往上滑试试？<br>
-back后面那是啥啊？我不认识啊，百度一下？</p>
-<h1 id="level-13">Level 13</h1>
-<ol>
-<li>这篇文章的标识符是26个小写字母和数字，所以十进制数要转为 [数据删除] 进制</li>
-<li>Markdown的图片好像可以藏文字吧？看看源代码里图片的位置有什么？</li>
-<li>全选试试？</li>
-</ol>
-<h1 id="level-14">Level 14</h1>
-<p>什么算法？</p>
-<h1 id="level-15">Level 15</h1>
-<p>有个东西叫做栅栏密码。</p>
-<h1 id="level-16">Level 16</h1>
-<p>所以在哪里选择啊！(话说界面是不是好看了一点？</p>
-<h1 id="level-17">Level 17</h1>
-<h2 id="a-3">A</h2>
-<p>这是哪一个视频网站？<br>
-答案 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">\downarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span><br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="White"><mrow><mi>B</mi><mi>i</mi><mi>l</mi><mi>i</mi><mi>b</mi><mi>i</mi><mi>l</mi><mi>i</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{White}{Bilibili}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord" style="color:White;"><span class="mord mathdefault" style="margin-right:0.05017em;color:White;">B</span><span class="mord mathdefault" style="color:White;">i</span><span class="mord mathdefault" style="margin-right:0.01968em;color:White;">l</span><span class="mord mathdefault" style="color:White;">i</span><span class="mord mathdefault" style="color:White;">b</span><span class="mord mathdefault" style="color:White;">i</span><span class="mord mathdefault" style="margin-right:0.01968em;color:White;">l</span><span class="mord mathdefault" style="color:White;">i</span></span></span></span></span><br>
-不过这里有点玄学。</p>
-<h2 id="b-3">B</h2>
-<p>打个暴力就好了啊。</p>
-<h1 id="level-18">Level 18</h1>
-<p>拖来拖去啥都没有？<br>
-不一定要在两个框里拖啊，拖到新标签页也行啊。<br>
-<strong>其中一个</strong> 答案需要英文句点。</p>
-<h1 id="level-19">Level 19</h1>
-<p>这不就是个验证码吗？输一下就好了<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="white"><mrow><mi mathvariant="normal">下</mi><mi mathvariant="normal">载</mi><mi mathvariant="normal">下</mi><mi mathvariant="normal">来</mi><mi mathvariant="normal">，</mi><mi mathvariant="normal">再</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow></mstyle></mrow><annotation encoding="application/x-tex">\color{white}{下载下来，再.....}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.10556em;vertical-align:0em;"></span><span class="mord" style="color:white;"><span class="mord cjk_fallback" style="color:white;">下</span><span class="mord cjk_fallback" style="color:white;">载</span><span class="mord cjk_fallback" style="color:white;">下</span><span class="mord cjk_fallback" style="color:white;">来</span><span class="mord cjk_fallback" style="color:white;">，</span><span class="mord cjk_fallback" style="color:white;">再</span><span class="mord" style="color:white;">.</span><span class="mord" style="color:white;">.</span><span class="mord" style="color:white;">.</span><span class="mord" style="color:white;">.</span><span class="mord" style="color:white;">.</span></span></span></span></span></p>
-<h1 id="level-20">Level 20</h1>
-<h1 id="level-21">Level 21</h1>
-<h1 id="level-22">Level 22</h1>
-<h1 id="番外篇">番外篇</h1>
-<h1 id="level-13番外">Level 13番外</h1>
-<p>建议先了解Level 13的全部内容。<br>
-并且想想如何只用鼠标左键输入东西。</p>
-]]></content>
     </entry>
 </feed>
