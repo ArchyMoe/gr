@@ -2070,12 +2070,12 @@ pre > span.copy-code:hover {
     .nav-toggle .line {
       background-color: #eee !important;
     }.header {
-        width: 75%;
+        width: 960px;
         margin: 0 auto;
       }
 
       .main-continer {
-        width: 75%;
+        width: 960px;
         margin: 0 auto;
       }
     body {
@@ -2132,11 +2132,11 @@ pre > span.copy-code:hover {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #e9ecefcc;
+      background: #f9f9f9cc;
     }
 
     .nav-item:hover {
-      background: #e9ecefcc;
+      background: #f9f9f9cc;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2148,37 +2148,37 @@ pre > span.copy-code:hover {
       transition-duration: 59s;
       transition-timing-function: cubic-bezier(.34,0,.84,1);
     }.markdownIt-TOC a {
-      color: #ced4da;
-      border-bottom-color: #ced4da;
+      color: #eee;
+      border-bottom-color: #eee;
     }.markdownIt-TOC a:hover {
-      color: #868e96;
-      border-bottom-color: #868e96;
+      color: #fff;
+      border-bottom-color: #fff;
     }.active-current > a {
-      color: #868e96 !important;
-      border-bottom-color: #868e96 !important;
+      color: #dee2e6 !important;
+      border-bottom-color: #dee2e6 !important;
     }
     .sidebar-title-active {
-      color: #868e96;
-      border-bottom-color: #868e96;
+      color: #dee2e6;
+      border-bottom-color: #dee2e6;
     }
     .sidebar-title-item:hover {
-      color: #868e96 !important;
+      color: #dee2e6 !important;
     }
     .active-show > a {
-      color: #868e96;
-      border-bottom-color: #868e96;
+      color: #dee2e6;
+      border-bottom-color: #dee2e6;
     }
     .active-hidden > a {
-      color: #868e96;
-      border-bottom-color: #868e96;
+      color: #dee2e6;
+      border-bottom-color: #dee2e6;
     }.bg-color {
-      background-color: #f1f3f5cc;
+      background-color: #ffffffcc;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 10px;
+      border-radius: 15px;
     }
     .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 10px;
+      border-radius: 15px;
     }
       .site-meta {
         background: #000 !important;
@@ -2190,12 +2190,12 @@ pre > span.copy-code:hover {
       background: #000000cc;
     }
     .main-title {
-      color: #f1f3f5;
+      color: #FFF;
     }
     .mist .site-title i {
-      background: #f1f3f5cc;
+      background: #FFFFFFcc;
     }.box-scale > #landlord {
-      transform: scale([0.1,0.5]);
+      transform: scale([0,1]);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
