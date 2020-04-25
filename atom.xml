@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://UserUnknownX.github.io/Blog</id>
+    <id>https://UserUnknownX.github.io/QWQ</id>
     <title>UserUnknown</title>
-    <updated>2020-04-25T07:16:04.090Z</updated>
+    <updated>2020-04-25T07:16:47.421Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://UserUnknownX.github.io/Blog"/>
-    <link rel="self" href="https://UserUnknownX.github.io/Blog/atom.xml"/>
+    <link rel="alternate" href="https://UserUnknownX.github.io/QWQ"/>
+    <link rel="self" href="https://UserUnknownX.github.io/QWQ/atom.xml"/>
     <subtitle>一个屑的博客</subtitle>
-    <logo>https://UserUnknownX.github.io/Blog/images/avatar.png</logo>
-    <icon>https://UserUnknownX.github.io/Blog/favicon.ico</icon>
+    <logo>https://UserUnknownX.github.io/QWQ/images/avatar.png</logo>
+    <icon>https://UserUnknownX.github.io/QWQ/favicon.ico</icon>
     <rights>All rights reserved 2020, UserUnknown</rights>
     <entry>
         <title type="html"><![CDATA[Windows.h库]]></title>
-        <id>https://UserUnknownX.github.io/Blog/post/windowsh-ku/</id>
-        <link href="https://UserUnknownX.github.io/Blog/post/windowsh-ku/">
+        <id>https://UserUnknownX.github.io/QWQ/post/windowsh-ku/</id>
+        <link href="https://UserUnknownX.github.io/QWQ/post/windowsh-ku/">
         </link>
         <updated>2020-04-23T13:14:52.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 CF160B 【Unlucky Ticket】]]></title>
-        <id>https://UserUnknownX.github.io/Blog/post/ti-jie-cf160b-unlucky-ticket/</id>
-        <link href="https://UserUnknownX.github.io/Blog/post/ti-jie-cf160b-unlucky-ticket/">
+        <id>https://UserUnknownX.github.io/QWQ/post/ti-jie-cf160b-unlucky-ticket/</id>
+        <link href="https://UserUnknownX.github.io/QWQ/post/ti-jie-cf160b-unlucky-ticket/">
         </link>
         <updated>2020-04-15T00:11:48.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 AT3849 【[ABC084C] Special Trains】]]></title>
-        <id>https://UserUnknownX.github.io/Blog/post/ti-jie-at3849-abc084c-special-trains/</id>
-        <link href="https://UserUnknownX.github.io/Blog/post/ti-jie-at3849-abc084c-special-trains/">
+        <id>https://UserUnknownX.github.io/QWQ/post/ti-jie-at3849-abc084c-special-trains/</id>
+        <link href="https://UserUnknownX.github.io/QWQ/post/ti-jie-at3849-abc084c-special-trains/">
         </link>
         <updated>2020-04-15T00:11:13.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA352 The Seasonal War]]></title>
-        <id>https://UserUnknownX.github.io/Blog/post/uva352-the-seasonal-war/</id>
-        <link href="https://UserUnknownX.github.io/Blog/post/uva352-the-seasonal-war/">
+        <id>https://UserUnknownX.github.io/QWQ/post/uva352-the-seasonal-war/</id>
+        <link href="https://UserUnknownX.github.io/QWQ/post/uva352-the-seasonal-war/">
         </link>
         <updated>2020-04-15T00:09:27.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[提示]]></title>
-        <id>https://UserUnknownX.github.io/Blog/post/hints/</id>
-        <link href="https://UserUnknownX.github.io/Blog/post/hints/">
+        <id>https://UserUnknownX.github.io/QWQ/post/hints/</id>
+        <link href="https://UserUnknownX.github.io/QWQ/post/hints/">
         </link>
         <updated>2020-03-31T16:00:00.000Z</updated>
     </entry>
