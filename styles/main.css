@@ -2088,7 +2088,7 @@ pre > span.copy-code:hover {
       border-bottom-color: #555;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
-      background: #eeeeee2;
+      background: #eeeeeeff;
     }h1, h2, h3, h4, h5, h6 {
       color: #555;
     }
@@ -2132,11 +2132,11 @@ pre > span.copy-code:hover {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #e9ecef2;
+      background: #e9ecefff;
     }
 
     .nav-item:hover {
-      background: #e9ecef2;
+      background: #e9ecefff;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2172,7 +2172,7 @@ pre > span.copy-code:hover {
       color: #868e96;
       border-bottom-color: #868e96;
     }.bg-color {
-      background-color: #f1f3f52;
+      background-color: #f1f3f5ff;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
       border-radius: 10px;
@@ -2187,17 +2187,15 @@ pre > span.copy-code:hover {
         background: #000 !important;
       }
     .brand {
-      background: #0000002;
+      background: #000000ff;
     }
     .main-title {
       color: #f1f3f5;
     }
     .mist .site-title i {
-      background: #f1f3f52;
+      background: #f1f3f5ff;
     }.box-scale > #landlord {
       transform: scale([0.1,0.5]);
-    }.box-shadow-wrapper {
-      box-shadow: none !important;
     }body {
       cursor: default;
     }a {
