@@ -201,6 +201,13 @@ pre > span.copy-code:hover {
   width: 16px;
   text-align: center;
 }
+.MathJax {
+  outline: 0;
+}
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden !important;
+}
 .head-top-line {
   height: 3px;
   background: #222;
@@ -245,10 +252,8 @@ pre > span.copy-code:hover {
   color: #fc6423;
   border: none;
   font-size: 16px;
-  border-top: 1px dotted #ccc;
-  border-bottom: 1px dotted #ccc;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .site-item-rss a {
   color: #fc6423;
@@ -268,7 +273,7 @@ pre > span.copy-code:hover {
   text-align: center;
   font-size: 0.8125em;
   color: #999;
-  margin: 0 0 25px 0;
+  margin: 0 0 10px 0;
 }
 .sidebar-item-social {
   margin-top: 5px;
@@ -2181,10 +2186,10 @@ pre > span.copy-code:hover {
       background-color: #f1f3f5ff;
     }
     .gemini .blog-header, .gemini .sidebar-wrapper, .gemini .article-wrapper, .gemini .post, .gemini .page, .gemini .section, .gemini .section-box, .gemini .sidebar-box, .gemini .friends-section {
-      border-radius: 10px;
+      border-radius: 0px;
     }
     .pisces .blog-header, .pisces .sidebar-wrapper, .pisces .article-wrapper, .pisces .section, .pisces .sidebar-box, .pisces .friends-section {
-      border-radius: 10px;
+      border-radius: 0px;
     }
       .site-meta {
         background: #000 !important;
