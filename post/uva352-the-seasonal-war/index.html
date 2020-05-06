@@ -9,7 +9,7 @@
 <meta name="description" content="Where the meteors crossed.">
 <meta name="theme-color" content="#000">
 <title>UVA352 The Seasonal War | UserUnknown</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1588726076818">
+<link rel="shortcut icon" href="/favicon.ico?v=1588730177945">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -524,28 +524,53 @@ int main(){
   </div>
 </div>
             
-  
-    
-      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
 
-<div id="gitalk-container"></div>
+<style>
+  .v .veditor {
+    min-height: 10rem;
+    background-image: url('https://upimage.alexhchu.com/2020/04/21/47eda59424daa.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+  }
 
+  .v .vwrap {
+    border: 1px solid #000 !important;
+  }
+
+  .v .vbtn {
+    padding: .4rem 1.2rem !important;
+    border-color: #fff !important;
+    background-color: #49b1f5 !important;
+    color: #fff !important;
+    font-size: .7rem !important;
+  }
+
+  .v .vcards .vcard .vh .vmeta .vat {
+    padding: 0 .8rem !important;
+    border: 1px solid #00c4b6 !important;
+    border-radius: 5px !important;
+    color: #00c4b6 !important;
+  }
+</style>
 <script>
-  var gitalk = new Gitalk({
-    clientID: 'b6bec2d73f04f0fa37e2',
-    clientSecret: '5d3e403eed6a5305b6290a631316c25a833f3369',
-    repo: 'UserUnknownX.github.io',
-    owner: 'UserUnknownX',
-    admin: ['UserUnknownX'],
-    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
+  new Valine({
+    el: '#vcomments',
+    appId: 'QYsj380i4vd3CU33hbYsxD0E-MdYXbMMI',
+    appKey: 'FPlv3QFmu2qcOQLRdcQMIuSV',
+    avatar: 'mp',
+    placeholder: '',
+    pageSize: '',
+    lang: 'zh-cn',
+    visitor: 'true' === 'true',
+    highlight: 'true' === 'true',
+    avatarForce: 'true' === 'true',
+  });
 </script>
-    
-    
-  
 
           </div>
         </div>
