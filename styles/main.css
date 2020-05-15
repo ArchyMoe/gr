@@ -209,8 +209,7 @@ pre > span.copy-code:hover {
   overflow-y: hidden !important;
 }
 .head-top-line {
-  height: 3px;
-  background: #222;
+  height: 2px;
 }
 .header-box {
   position: relative;
@@ -2223,12 +2222,12 @@ body {
     }.bg-color {
       background-color: #f1f3f5fe;
     }
-      .site-meta {
-        background: #000 !important;
-      }
-      .head-top-line {
-        background: #000 !important;
-      }
+    .site-meta {
+      background: #000 !important;
+    }
+    .head-top-line {
+      background: #000;
+    }
     .brand {
       background: #000000fe;
     }
