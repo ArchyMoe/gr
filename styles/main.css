@@ -603,7 +603,7 @@ pre > span.copy-code:hover {
 }
 .post-footer .post-eof {
   display: block;
-  margin: 80px auto 60px;
+  margin: 40px auto 30px;
   width: 8%;
   height: 1px;
   background: #ccc;
@@ -2114,9 +2114,6 @@ pre > span.copy-code:hover {
 }
 body {
       background-color: #eee;
-    }
-    .nav-toggle .line {
-      background-color: #eee !important;
     }.header {
         width: 75%;
         margin: 0 auto;
@@ -2126,7 +2123,13 @@ body {
         width: 75%;
         margin: 0 auto;
       }
-    body {
+    @font-face {
+      font-family: 'JetBrainsMono.ttf';
+      src: url('/media/fonts/JetBrainsMono.ttf.ttf');
+    }
+    * {
+        font-family: 'JetBrainsMono.ttf';
+    }body {
       color: #555;
     }
     .next-md-body {
@@ -2175,6 +2178,9 @@ body {
       color: #222;
       border-bottom-color: #222;
     }
+    .nav-toggle .line {
+      background-color:  !important;
+    }
       .nav-item a {
         color:  #555;
       }.nav-item a:hover {
@@ -2219,7 +2225,9 @@ body {
     .active-hidden > a {
       color: #868e96;
       border-bottom-color: #868e96;
-    }.bg-color {
+    }.reward-btn-text {
+        background-color: #f03e3efe !important;
+      }.bg-color {
       background-color: #f1f3f5fe;
     }
     .site-meta {
