@@ -9,7 +9,7 @@
 <meta name="description" content="Where the meteors crossed.">
 <meta name="theme-color" content="#000">
 <title>UVA352 The Seasonal War | UserUnknown</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1594007240332">
+<link rel="shortcut icon" href="/favicon.ico?v=1594013901929">
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -394,7 +394,7 @@
 </script>
         <div class="section-box box-shadow-wrapper">
           <div class="section bg-color post post-page">
-            <header class="post-header">
+            <section class="post-header">
   <h1 class="post-title">
     <a class="post-title-link" href="https://blog.userunknown.gq/post/uva352-the-seasonal-war/">
       UVA352 The Seasonal War
@@ -405,7 +405,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span>2020-04-15</span>
+      <span class="publish-time" data-t="2020-04-15 08:09:27">2020-04-15</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -465,7 +465,7 @@
     </span>
     
   </div>
-</header>
+</section>
             <div class="post-body next-md-body" id="post_body">
               <p>题目本身不难理解，就是搜索。</p>
 <pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
@@ -603,7 +603,7 @@ int main(){
     placeholder: '来都来了，评论一下？',
     pageSize: '20',
     lang: 'zh-cn',
-    enableQQ: true,
+    enableQQ: 'true' === 'true',
     visitor: 'true' === 'true',
     highlight: 'true' === 'true',
     avatarForce: 'true' === 'true',
@@ -785,7 +785,7 @@ int main(){
   hljs.initHighlightingOnLoad();
   
   // 离开当前页title变化
-  var leaveTitle = '404NotFound >_<';
+  var leaveTitle = "404NotFound >_<";
   if (leaveTitle) {
     document.addEventListener('visibilitychange', function () {
       if (document.visibilityState == 'hidden') {
@@ -819,7 +819,7 @@ int main(){
       let lightImg = document.createElement('img');
       lightImg.src = this.src;
       lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
-      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.style = `width: ${width}px;border-radius: 2px;`;
       lightImg.onclick = function () {
         lightBox.style = '';
         this.remove();
@@ -1060,7 +1060,7 @@ int main(){
   </div>
 </body>
 
-  <div class="search-mask" id="search_mask" style="display: none;">
+<div class="search-mask" id="search_mask" style="display: none;">
   <div class="search-box">
     <div class="search-title">
       <i class="fa fa-search"></i>
@@ -1751,7 +1751,29 @@ OI日常被吊打。&lt;/p&gt;
 
 <input hidden id="copy" />
 <script>
-  let language = 'en';
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
   if (language !== '') {
     let map = new Map();
     if (language === 'en') {
@@ -1861,7 +1883,6 @@ OI日常被吊打。&lt;/p&gt;
       let code = e.currentTarget.querySelector('code');
       var text = code.innerText;
       if (e.srcElement.textContent === '复制成功') {
-        console.log('复制操作频率过高');
         return;
       }
       e.srcElement.textContent = '复制成功';
@@ -1899,5 +1920,9 @@ OI日常被吊打。&lt;/p&gt;
 
 
 <script src="/media/js/cool.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script>
 
 </html>
