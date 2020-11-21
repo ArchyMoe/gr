@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://archym.now.sh</id>
+    <id>https://archymoe.github.io</id>
     <title>Path Unknown</title>
-    <updated>2020-11-21T04:49:23.708Z</updated>
+    <updated>2020-11-21T04:52:13.740Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://archym.now.sh"/>
-    <link rel="self" href="https://archym.now.sh/atom.xml"/>
+    <link rel="alternate" href="https://archymoe.github.io"/>
+    <link rel="self" href="https://archymoe.github.io/atom.xml"/>
     <subtitle>Where the meteors crossed.</subtitle>
-    <logo>https://archym.now.sh/images/avatar.png</logo>
-    <icon>https://archym.now.sh/favicon.ico</icon>
+    <logo>https://archymoe.github.io/images/avatar.png</logo>
+    <icon>https://archymoe.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Path Unknown</rights>
     <entry>
         <title type="html"><![CDATA[如何卡常数]]></title>
-        <id>https://archym.now.sh/post/ru-he-qia-chang-shu/</id>
-        <link href="https://archym.now.sh/post/ru-he-qia-chang-shu/">
+        <id>https://archymoe.github.io/post/ru-he-qia-chang-shu/</id>
+        <link href="https://archymoe.github.io/post/ru-he-qia-chang-shu/">
         </link>
         <updated>2020-05-06T06:27:40.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[图论]]></title>
-        <id>https://archym.now.sh/post/tu-lun/</id>
-        <link href="https://archym.now.sh/post/tu-lun/">
+        <id>https://archymoe.github.io/post/tu-lun/</id>
+        <link href="https://archymoe.github.io/post/tu-lun/">
         </link>
         <updated>2020-05-06T03:48:53.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[背包问题九讲]]></title>
-        <id>https://archym.now.sh/post/bei-bao-wen-ti-jiu-jiang/</id>
-        <link href="https://archym.now.sh/post/bei-bao-wen-ti-jiu-jiang/">
+        <id>https://archymoe.github.io/post/bei-bao-wen-ti-jiu-jiang/</id>
+        <link href="https://archymoe.github.io/post/bei-bao-wen-ti-jiu-jiang/">
         </link>
         <updated>2020-05-06T03:09:04.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows.h库]]></title>
-        <id>https://archym.now.sh/post/windowsh-ku/</id>
-        <link href="https://archym.now.sh/post/windowsh-ku/">
+        <id>https://archymoe.github.io/post/windowsh-ku/</id>
+        <link href="https://archymoe.github.io/post/windowsh-ku/">
         </link>
         <updated>2020-04-23T13:14:52.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 CF160B 【Unlucky Ticket】]]></title>
-        <id>https://archym.now.sh/post/ti-jie-cf160b-unlucky-ticket/</id>
-        <link href="https://archym.now.sh/post/ti-jie-cf160b-unlucky-ticket/">
+        <id>https://archymoe.github.io/post/ti-jie-cf160b-unlucky-ticket/</id>
+        <link href="https://archymoe.github.io/post/ti-jie-cf160b-unlucky-ticket/">
         </link>
         <updated>2020-04-15T00:11:48.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[题解 AT3849 【[ABC084C] Special Trains】]]></title>
-        <id>https://archym.now.sh/post/ti-jie-at3849-abc084c-special-trains/</id>
-        <link href="https://archym.now.sh/post/ti-jie-at3849-abc084c-special-trains/">
+        <id>https://archymoe.github.io/post/ti-jie-at3849-abc084c-special-trains/</id>
+        <link href="https://archymoe.github.io/post/ti-jie-at3849-abc084c-special-trains/">
         </link>
         <updated>2020-04-15T00:11:13.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA352 The Seasonal War]]></title>
-        <id>https://archym.now.sh/post/uva352-the-seasonal-war/</id>
-        <link href="https://archym.now.sh/post/uva352-the-seasonal-war/">
+        <id>https://archymoe.github.io/post/uva352-the-seasonal-war/</id>
+        <link href="https://archymoe.github.io/post/uva352-the-seasonal-war/">
         </link>
         <updated>2020-04-15T00:09:27.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Nazo提示]]></title>
-        <id>https://archym.now.sh/post/hints/</id>
-        <link href="https://archym.now.sh/post/hints/">
+        <id>https://archymoe.github.io/post/hints/</id>
+        <link href="https://archymoe.github.io/post/hints/">
         </link>
         <updated>2020-03-31T16:00:00.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[公告板]]></title>
-        <id>https://archym.now.sh/post/about/</id>
-        <link href="https://archym.now.sh/post/about/">
+        <id>https://archymoe.github.io/post/about/</id>
+        <link href="https://archymoe.github.io/post/about/">
         </link>
         <updated>2019-01-25T11:09:48.000Z</updated>
         <summary type="html"><![CDATA[<p>请先阅读此处内容！</p>
@@ -79,8 +79,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[这是……]]></title>
-        <id>https://archym.now.sh/post/zhe-shi/</id>
-        <link href="https://archym.now.sh/post/zhe-shi/">
+        <id>https://archymoe.github.io/post/zhe-shi/</id>
+        <link href="https://archymoe.github.io/post/zhe-shi/">
         </link>
         <updated>0999-12-31T16:00:00.000Z</updated>
     </entry>
