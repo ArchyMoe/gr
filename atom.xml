@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.xmoe.xyz</id>
     <title>Xmoe</title>
-    <updated>2020-11-28T10:36:04.736Z</updated>
+    <updated>2020-11-28T10:55:18.395Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.xmoe.xyz"/>
     <link rel="self" href="https://blog.xmoe.xyz/atom.xml"/>
@@ -12,22 +12,22 @@
     <rights>All rights reserved 2020, Xmoe</rights>
     <entry>
         <title type="html"><![CDATA[【模板】各类算法]]></title>
-        <id>https://blog.xmoe.xyz/mo-ban-ge-lei-suan-fa/</id>
-        <link href="https://blog.xmoe.xyz/mo-ban-ge-lei-suan-fa/">
+        <id>https://blog.xmoe.xyz/post/mo-ban-ge-lei-suan-fa/</id>
+        <link href="https://blog.xmoe.xyz/post/mo-ban-ge-lei-suan-fa/">
         </link>
         <updated>2020-11-28T10:35:15.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[如何卡常数]]></title>
-        <id>https://blog.xmoe.xyz/ru-he-qia-chang-shu/</id>
-        <link href="https://blog.xmoe.xyz/ru-he-qia-chang-shu/">
+        <id>https://blog.xmoe.xyz/post/ru-he-qia-chang-shu/</id>
+        <link href="https://blog.xmoe.xyz/post/ru-he-qia-chang-shu/">
         </link>
         <updated>2020-05-06T06:27:40.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Windows.h库]]></title>
-        <id>https://blog.xmoe.xyz/windowsh-ku/</id>
-        <link href="https://blog.xmoe.xyz/windowsh-ku/">
+        <id>https://blog.xmoe.xyz/post/windowsh-ku/</id>
+        <link href="https://blog.xmoe.xyz/post/windowsh-ku/">
         </link>
         <updated>2020-04-23T13:14:52.000Z</updated>
     </entry>
