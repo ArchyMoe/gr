@@ -307,8 +307,7 @@ int main()
       
 
       <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  
-<center><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20200705" target="_blank"> 20200705号</a></center>
+  <center><a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20200705" target="_blank"> 20200705号</a></center>
 </footer>
     </div>
 
@@ -521,20 +520,16 @@ int main()
     initImg();
   </script>
   
-    <script type="application/javascript" src="https://unpkg.com/valine"></script>
+    <script src="https://cdn.jsdelivr.net/npm/minivaline@4/dist/MiniValine.min.js"></script>
 <script type="application/javascript">
-  new Valine({
-    el: '#vlaine-comment',
+  new MiniValine({
+    el: '.mvcomment',
     appId: '6RhXLKwBc5il3ueKzXVNtlGV-MdYXbMMI',
     appKey: 'ICO5fx9Dax1ogCMrcIFIig6A',
-    pageSize: 10,
-    notify: false,
-    avatar: 'mp',
-    verify: true,
     placeholder: '欢迎来到Xmoe~',
     visitor: true,
-    highlight: true,
-    recordIP: true,
+    barrager: 0,
+    adminEmailMd5: '66420e01bca6df9968a6fc6c7dce001f'
   })
 </script>
   
